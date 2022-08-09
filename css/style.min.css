@@ -520,6 +520,7 @@ body {
   height: 2px;
   bottom: 0;
 }
+
 .form__input, .form__message {
   background: #fff;
   border: none;
@@ -541,8 +542,8 @@ body {
   top: 67px;
   right: 81px;
   background-color: #fff;
-  width: 349px;
-  height: 315px;
+  max-width: 349px;
+  width: 100%;
   border: 2px solid #dcdcdc;
   padding: 20px;
 }
@@ -607,6 +608,7 @@ body {
   background-color: #ccc;
   margin: 0 8px;
 }
+
 @media (max-width: 992px) {
   .menu {
     position: absolute;
@@ -716,5 +718,12 @@ body {
   .tabs__img {
     padding-right: 0;
     margin-bottom: 10px;
+  }
+  .contacts__content {
+    top: 67px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 }
